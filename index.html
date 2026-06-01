@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,302 +8,209 @@
     <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-    <script src="https://kit.fontawesome.com/a2e0e6ad65.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
 <header>
-    <nav class="navbar">
+    <div class="container nav">
+        <div class="logo">TuNombre</div>
 
-        <div class="logo">
-            TuNombre
-        </div>
-
-        <ul class="nav-links">
-            <li><a href="#about">Acerca</a></li>
-            <li><a href="#resume">Resumen</a></li>
-            <li><a href="#projects">Portfolio</a></li>
-            <li><a href="#contact">Contacto</a></li>
-        </ul>
-
-    </nav>
+        <nav>
+            <a href="#about">Acerca</a>
+            <a href="#resume">Resumen</a>
+            <a href="#projects">Portfolio</a>
+            <a href="#contact">Contacto</a>
+        </nav>
+    </div>
 </header>
 
-<section class="hero hidden">
+<section class="hero container">
 
     <img src="assets/profile.jpg" alt="Perfil" class="avatar">
 
-    <span class="status">
+    <span class="badge">
         Disponible para trabajar
     </span>
 
-    <h1>Tu Nombre</h1>
+    <h1>
+        Hola, soy Tu Nombre
+    </h1>
 
-    <h2>Full Stack Developer</h2>
-
-    <p>
-        Desarrollo aplicaciones web,
-        APIs, automatizaciones y soluciones
-        escalables.
+    <p class="subtitle">
+        Full Stack Developer especializado en aplicaciones web,
+        automatización y backend.
     </p>
 
-    <div class="stats">
-
-        <div>
-            <strong>3+</strong>
-            <span>Años</span>
-        </div>
-
-        <div>
-            <strong>15+</strong>
-            <span>Proyectos</span>
-        </div>
-
-        <div>
-            <strong>10+</strong>
-            <span>Tecnologías</span>
-        </div>
-
-    </div>
-
     <div class="hero-buttons">
-
-        <a href="#projects" class="btn primary">
-            Ver Portfolio
+        <a href="#projects" class="btn-primary">
+            Ver proyectos
         </a>
 
-        <a href="#contact" class="btn secondary">
+        <a href="#contact" class="btn-secondary">
             Contacto
         </a>
-
     </div>
 
 </section>
 
-<section id="about" class="section hidden">
+<section id="about" class="container section">
 
     <h2>Acerca de mí</h2>
 
     <div class="card">
-
         <p>
-            Soy desarrollador de software enfocado en
-            crear aplicaciones modernas, mantenibles
-            y eficientes.
-
-            Disfruto trabajar con tecnologías web,
-            automatización y arquitectura de software.
+            Soy desarrollador de software con interés en backend,
+            arquitectura, automatización y desarrollo web moderno.
+            Me gusta crear productos simples, rápidos y mantenibles.
         </p>
-
     </div>
 
 </section>
 
-<section id="resume" class="section hidden">
+<section id="resume" class="container section">
 
     <h2>Resumen</h2>
 
-    <div class="resume-grid">
+    <div class="grid-3">
 
         <div class="card">
-
             <h3>Educación</h3>
 
-            <div class="item">
-                <strong>Ingeniería en Sistemas</strong>
-                <p>Universidad XYZ</p>
-                <span>2019 - 2024</span>
-            </div>
-
+            <ul>
+                <li>Ingeniería en Sistemas</li>
+                <li>Certificaciones Cloud</li>
+                <li>Cursos de desarrollo web</li>
+            </ul>
         </div>
 
         <div class="card">
-
             <h3>Skills</h3>
 
-            <div class="skills">
-
-                <span>JavaScript</span>
-                <span>TypeScript</span>
+            <div class="tags">
+                <span>Java</span>
+                <span>Python</span>
+                <span>Spring</span>
                 <span>React</span>
                 <span>Node.js</span>
-                <span>Python</span>
-                <span>Docker</span>
-                <span>Git</span>
                 <span>PostgreSQL</span>
-
+                <span>Docker</span>
+                <span>Linux</span>
+                <span>Git</span>
             </div>
-
         </div>
 
         <div class="card">
-
             <h3>Experiencia</h3>
 
-            <div class="timeline">
-
-                <div class="timeline-item">
-
-                    <span class="date">
-                        2023 - Actualidad
-                    </span>
-
-                    <h4>Full Stack Developer</h4>
-
-                    <p>
-                        Desarrollo de aplicaciones y APIs.
-                    </p>
-
-                </div>
-
-                <div class="timeline-item">
-
-                    <span class="date">
-                        2021 - 2023
-                    </span>
-
-                    <h4>Frontend Developer</h4>
-
-                    <p>
-                        Desarrollo de interfaces con React.
-                    </p>
-
-                </div>
-
-            </div>
-
+            <ul>
+                <li>Full Stack Developer</li>
+                <li>Backend Developer</li>
+                <li>Freelance Projects</li>
+            </ul>
         </div>
 
     </div>
 
 </section>
 
-<section id="projects" class="section hidden">
+<section id="projects" class="container section">
 
     <h2>Portfolio</h2>
 
-    <div class="projects-grid">
+    <div class="projects">
 
-        <div class="project-card">
+        <article class="project-card">
 
-            <img src="assets/project1.png" alt="Proyecto 1">
+            <img src="assets/project1.jpg" alt="Proyecto 1">
 
             <div class="project-content">
 
                 <h3>Sistema de Gestión</h3>
 
                 <p>
-                    Plataforma para administración
-                    de inventario y operaciones.
+                    Aplicación para administración de inventario
+                    y control de operaciones.
                 </p>
 
                 <div class="tags">
-
                     <span>React</span>
-                    <span>Node.js</span>
+                    <span>Spring</span>
                     <span>PostgreSQL</span>
-
                 </div>
 
-                <div class="project-links">
-
-                    <a href="#">
-                        GitHub
-                    </a>
-
-                    <a href="#">
-                        Demo
-                    </a>
-
+                <div class="links">
+                    <a href="#">GitHub</a>
+                    <a href="#">Demo</a>
                 </div>
 
             </div>
 
-        </div>
+        </article>
 
-        <div class="project-card">
+        <article class="project-card">
 
-            <img src="assets/project2.png" alt="Proyecto 2">
+            <img src="assets/project2.jpg" alt="Proyecto 2">
 
             <div class="project-content">
 
                 <h3>Dashboard Analytics</h3>
 
                 <p>
-                    Visualización de métricas en tiempo real.
+                    Visualización de métricas y reportes en tiempo real.
                 </p>
 
                 <div class="tags">
-
                     <span>Python</span>
                     <span>FastAPI</span>
-                    <span>Chart.js</span>
-
+                    <span>ChartJS</span>
                 </div>
 
-                <div class="project-links">
-
-                    <a href="#">
-                        GitHub
-                    </a>
-
-                    <a href="#">
-                        Demo
-                    </a>
-
+                <div class="links">
+                    <a href="#">GitHub</a>
+                    <a href="#">Demo</a>
                 </div>
 
             </div>
 
-        </div>
+        </article>
 
-        <div class="project-card">
+        <article class="project-card">
 
-            <img src="assets/project3.png" alt="Proyecto 3">
+            <img src="assets/project3.jpg" alt="Proyecto 3">
 
             <div class="project-content">
 
                 <h3>Automatización</h3>
 
                 <p>
-                    Generación automática de reportes.
+                    Automatización de procesos y generación de reportes.
                 </p>
 
                 <div class="tags">
-
                     <span>Python</span>
                     <span>Pandas</span>
-
                 </div>
 
-                <div class="project-links">
-
-                    <a href="#">
-                        GitHub
-                    </a>
-
+                <div class="links">
+                    <a href="#">GitHub</a>
                 </div>
 
             </div>
 
-        </div>
+        </article>
 
     </div>
 
 </section>
 
-<section id="contact" class="section hidden">
+<section id="contact" class="container section">
 
     <h2>Contacto</h2>
 
-    <div class="contact-grid">
+    <div class="contact">
 
-        <a href="mailto:tuemail@email.com">
-            📧 tuemail@email.com
-        </a>
+        <a href="mailto:tu@email.com">📧 tu@email.com</a>
 
         <a href="https://github.com/usuario">
             💻 GitHub
@@ -314,24 +220,14 @@
             💼 LinkedIn
         </a>
 
-        <div>
-            📍 Misiones, Argentina
-        </div>
-
-        <div>
-            🎂 01/01/2000
-        </div>
+        <span>📍 Misiones, Argentina</span>
 
     </div>
 
 </section>
 
 <footer>
-
-    <p>
-        © 2026 Tu Nombre
-    </p>
-
+    © 2026 Tu Nombre
 </footer>
 
 <script src="script.js"></script>
