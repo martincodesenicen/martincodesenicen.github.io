@@ -1,13 +1,15 @@
-const toggle = document.getElementById("theme-toggle");
+const observer = new IntersectionObserver(entries => {
 
-toggle.addEventListener("click", () => {
-    document.body.classList.toggle("dark");
+    entries.forEach(entry => {
 
-    const darkMode = document.body.classList.contains("dark");
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+        }
 
-    localStorage.setItem("darkMode", darkMode);
+    });
+
 });
 
-if (localStorage.getItem("darkMode") === "true") {
-    document.body.classList.add("dark");
-}
+document
+    .querySelectorAll(".hidden")
+    .forEach(el => observer.observe(el));
