@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,16 +9,19 @@
     <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/a2e0e6ad65.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
 
 <header>
     <nav class="navbar">
-        <div class="logo">Portfolio</div>
+
+        <div class="logo">
+            TuNombre
+        </div>
 
         <ul class="nav-links">
             <li><a href="#about">Acerca</a></li>
@@ -26,55 +30,87 @@
             <li><a href="#contact">Contacto</a></li>
         </ul>
 
-        <button id="theme-toggle">
-            <i class="fa-solid fa-moon"></i>
-        </button>
     </nav>
 </header>
 
-<section class="hero">
-    <div class="hero-content">
-        <h1>Tu Nombre</h1>
+<section class="hero hidden">
 
-        <h2>Desarrollador Full Stack</h2>
+    <img src="assets/profile.jpg" alt="Perfil" class="avatar">
 
-        <p>
-            Construyo aplicaciones web modernas,
-            herramientas de automatización y soluciones escalables.
-        </p>
+    <span class="status">
+        Disponible para trabajar
+    </span>
 
-        <div class="hero-buttons">
-            <a href="#projects" class="btn primary">
-                Ver Portfolio
-            </a>
+    <h1>Tu Nombre</h1>
 
-            <a href="#contact" class="btn secondary">
-                Contacto
-            </a>
+    <h2>Full Stack Developer</h2>
+
+    <p>
+        Desarrollo aplicaciones web,
+        APIs, automatizaciones y soluciones
+        escalables.
+    </p>
+
+    <div class="stats">
+
+        <div>
+            <strong>3+</strong>
+            <span>Años</span>
         </div>
+
+        <div>
+            <strong>15+</strong>
+            <span>Proyectos</span>
+        </div>
+
+        <div>
+            <strong>10+</strong>
+            <span>Tecnologías</span>
+        </div>
+
     </div>
+
+    <div class="hero-buttons">
+
+        <a href="#projects" class="btn primary">
+            Ver Portfolio
+        </a>
+
+        <a href="#contact" class="btn secondary">
+            Contacto
+        </a>
+
+    </div>
+
 </section>
 
-<section id="about" class="section">
+<section id="about" class="section hidden">
+
     <h2>Acerca de mí</h2>
 
     <div class="card">
-        <p>
-            Soy desarrollador de software apasionado por crear
-            soluciones simples, mantenibles y centradas en el usuario.
 
-            Me interesa el desarrollo web, la automatización,
-            la arquitectura de software y el aprendizaje continuo.
+        <p>
+            Soy desarrollador de software enfocado en
+            crear aplicaciones modernas, mantenibles
+            y eficientes.
+
+            Disfruto trabajar con tecnologías web,
+            automatización y arquitectura de software.
         </p>
+
     </div>
+
 </section>
 
-<section id="resume" class="section">
+<section id="resume" class="section hidden">
+
     <h2>Resumen</h2>
 
     <div class="resume-grid">
 
         <div class="card">
+
             <h3>Educación</h3>
 
             <div class="item">
@@ -83,143 +119,219 @@
                 <span>2019 - 2024</span>
             </div>
 
-            <div class="item">
-                <strong>Certificaciones</strong>
-                <p>AWS · Docker · Scrum</p>
-            </div>
         </div>
 
         <div class="card">
+
             <h3>Skills</h3>
 
             <div class="skills">
+
                 <span>JavaScript</span>
                 <span>TypeScript</span>
                 <span>React</span>
                 <span>Node.js</span>
                 <span>Python</span>
-                <span>PostgreSQL</span>
                 <span>Docker</span>
                 <span>Git</span>
-                <span>Linux</span>
+                <span>PostgreSQL</span>
+
             </div>
+
         </div>
 
         <div class="card">
+
             <h3>Experiencia</h3>
 
-            <div class="item">
-                <strong>Empresa Actual</strong>
-                <p>Desarrollador Full Stack</p>
-                <span>2023 - Actualidad</span>
+            <div class="timeline">
+
+                <div class="timeline-item">
+
+                    <span class="date">
+                        2023 - Actualidad
+                    </span>
+
+                    <h4>Full Stack Developer</h4>
+
+                    <p>
+                        Desarrollo de aplicaciones y APIs.
+                    </p>
+
+                </div>
+
+                <div class="timeline-item">
+
+                    <span class="date">
+                        2021 - 2023
+                    </span>
+
+                    <h4>Frontend Developer</h4>
+
+                    <p>
+                        Desarrollo de interfaces con React.
+                    </p>
+
+                </div>
+
             </div>
 
-            <div class="item">
-                <strong>Empresa Anterior</strong>
-                <p>Frontend Developer</p>
-                <span>2021 - 2023</span>
-            </div>
         </div>
 
     </div>
+
 </section>
 
-<section id="projects" class="section">
+<section id="projects" class="section hidden">
+
     <h2>Portfolio</h2>
 
     <div class="projects-grid">
 
         <div class="project-card">
-            <h3>Sistema de Gestión</h3>
 
-            <p>
-                Plataforma para administración de inventario
-                y control de operaciones.
-            </p>
+            <img src="assets/project1.png" alt="Proyecto 1">
 
-            <div class="tech">
-                React · Node.js · PostgreSQL
+            <div class="project-content">
+
+                <h3>Sistema de Gestión</h3>
+
+                <p>
+                    Plataforma para administración
+                    de inventario y operaciones.
+                </p>
+
+                <div class="tags">
+
+                    <span>React</span>
+                    <span>Node.js</span>
+                    <span>PostgreSQL</span>
+
+                </div>
+
+                <div class="project-links">
+
+                    <a href="#">
+                        GitHub
+                    </a>
+
+                    <a href="#">
+                        Demo
+                    </a>
+
+                </div>
+
             </div>
 
-            <div class="links">
-                <a href="#">Demo</a>
-                <a href="#">GitHub</a>
-            </div>
         </div>
 
         <div class="project-card">
-            <h3>Dashboard Analytics</h3>
 
-            <p>
-                Visualización de métricas en tiempo real
-                para monitoreo empresarial.
-            </p>
+            <img src="assets/project2.png" alt="Proyecto 2">
 
-            <div class="tech">
-                Python · FastAPI · Chart.js
+            <div class="project-content">
+
+                <h3>Dashboard Analytics</h3>
+
+                <p>
+                    Visualización de métricas en tiempo real.
+                </p>
+
+                <div class="tags">
+
+                    <span>Python</span>
+                    <span>FastAPI</span>
+                    <span>Chart.js</span>
+
+                </div>
+
+                <div class="project-links">
+
+                    <a href="#">
+                        GitHub
+                    </a>
+
+                    <a href="#">
+                        Demo
+                    </a>
+
+                </div>
+
             </div>
 
-            <div class="links">
-                <a href="#">Demo</a>
-                <a href="#">GitHub</a>
-            </div>
         </div>
 
         <div class="project-card">
-            <h3>Automatización de Reportes</h3>
 
-            <p>
-                Generación automática de reportes PDF
-                y envío por correo.
-            </p>
+            <img src="assets/project3.png" alt="Proyecto 3">
 
-            <div class="tech">
-                Python · Pandas
+            <div class="project-content">
+
+                <h3>Automatización</h3>
+
+                <p>
+                    Generación automática de reportes.
+                </p>
+
+                <div class="tags">
+
+                    <span>Python</span>
+                    <span>Pandas</span>
+
+                </div>
+
+                <div class="project-links">
+
+                    <a href="#">
+                        GitHub
+                    </a>
+
+                </div>
+
             </div>
 
-            <div class="links">
-                <a href="#">GitHub</a>
-            </div>
         </div>
 
     </div>
+
 </section>
 
-<section id="contact" class="section">
+<section id="contact" class="section hidden">
+
     <h2>Contacto</h2>
 
-    <div class="card contact-card">
+    <div class="contact-grid">
 
-        <div class="contact-item">
-            <i class="fa-solid fa-envelope"></i>
-            <span>tuemail@email.com</span>
+        <a href="mailto:tuemail@email.com">
+            📧 tuemail@email.com
+        </a>
+
+        <a href="https://github.com/usuario">
+            💻 GitHub
+        </a>
+
+        <a href="https://linkedin.com/in/usuario">
+            💼 LinkedIn
+        </a>
+
+        <div>
+            📍 Misiones, Argentina
         </div>
 
-        <div class="contact-item">
-            <i class="fa-solid fa-location-dot"></i>
-            <span>Misiones, Argentina</span>
-        </div>
-
-        <div class="contact-item">
-            <i class="fa-solid fa-cake-candles"></i>
-            <span>01/01/2000</span>
-        </div>
-
-        <div class="contact-item">
-            <i class="fa-brands fa-github"></i>
-            <span>github.com/usuario</span>
-        </div>
-
-        <div class="contact-item">
-            <i class="fa-brands fa-linkedin"></i>
-            <span>linkedin.com/in/usuario</span>
+        <div>
+            🎂 01/01/2000
         </div>
 
     </div>
+
 </section>
 
 <footer>
-    <p>© 2026 Tu Nombre</p>
+
+    <p>
+        © 2026 Tu Nombre
+    </p>
+
 </footer>
 
 <script src="script.js"></script>
