@@ -19,7 +19,7 @@ html{
 
 body{
     font-family:'Inter',sans-serif;
-    background:var(--bg);
+    background:radial-gradient(circle at top,#132238 0%,#0d1117 40%), #0d1117;
     color:var(--text);
 }
 
@@ -115,7 +115,13 @@ nav a:hover{
 
 .btn-primary{
     background:var(--accent);
-    color:white;
+    font-weight:700;
+    transition:.2s;
+}
+
+.btn-primary:hover{
+    transform:translateY(-2px);
+    box-shadow:0 10px 30px rgba(88,166,255,.35);
 }
 
 .btn-secondary{
@@ -152,12 +158,10 @@ nav a:hover{
 }
 
 .tags span{
-    background:#0d1117;
-    border:1px solid var(--border);
-    padding:.4rem .8rem;
-    border-radius:999px;
+    background:rgba(88,166,255,.12);
+    color:#7bc2ff;
+    border:none;
 }
-
 .projects{
     display:grid;
     gap:2rem;
