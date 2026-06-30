@@ -165,19 +165,27 @@ nav a:hover::after{
 }
 
 .card{
-    background:#161b22;
-    border:none;
-    border-radius:20px;
+    display:flex;
+    flex-direction:column;
 }
 
 .card:hover{
     background:#1b2129;
 }
 
+.card ul{
+    margin-top:1rem;
+    display:flex;
+    flex-direction:column;
+    gap:.8rem;
+    list-style:none;
+}
+
 .grid-3{
     display:grid;
-    gap:1.5rem;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:2rem;
+    align-items:stretch;
 }
 
 .tags{
