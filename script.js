@@ -41,4 +41,15 @@ sliders.forEach(slider=>{
 
     });
 
+    setInterval(()=>{
+    
+        current++;
+    
+        if(current>=images.length)
+            current=0;
+    
+        show(current);
+    
+    },5000);
+
 });
