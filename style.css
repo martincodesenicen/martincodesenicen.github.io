@@ -167,6 +167,8 @@ nav a:hover::after{
 .card{
     display:flex;
     flex-direction:column;
+    padding:2.5rem;
+    overflow-wrap:anywhere;
 }
 
 .card:hover{
@@ -179,6 +181,25 @@ nav a:hover::after{
     flex-direction:column;
     gap:.8rem;
     list-style:none;
+}
+
+.card h3{
+    font-size:1.4rem;
+    margin-bottom:1.5rem;
+}
+
+.card h3::after{
+    content:"";
+    display:block;
+    width:40px;
+    height:3px;
+    margin-top:.6rem;
+    background:var(--accent);
+    border-radius:10px;
+}
+
+.card .tags{
+    margin-top:1rem;
 }
 
 .grid-3{
