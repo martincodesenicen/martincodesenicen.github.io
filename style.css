@@ -202,11 +202,51 @@ nav a:hover::after{
     margin-top:1rem;
 }
 
-.grid-3{
+.resume-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    grid-template-columns:repeat(2,1fr);
     gap:2rem;
-    align-items:stretch;
+}
+
+.resume-block{
+    background:var(--surface);
+    border-radius:20px;
+    padding:2rem;
+    border:1px solid var(--border);
+}
+
+.resume-block h3{
+    font-size:1.35rem;
+    margin-bottom:1.5rem;
+}
+
+.resume-block p{
+    margin-bottom:.8rem;
+    color:var(--muted);
+}
+
+.resume-block strong{
+    color:var(--text);
+}
+
+.full-width{
+    grid-column:1 / -1;
+}
+
+.focus-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:1rem;
+    margin-top:1rem;
+}
+
+.focus-grid div{
+    background:#0d1117;
+    border:1px solid var(--border);
+    padding:1rem;
+    border-radius:12px;
+    text-align:center;
+    font-weight:500;
 }
 
 .tags{
@@ -309,4 +349,9 @@ footer{
     .hero-buttons{
         flex-direction:column;
     }
+
+    .resume-grid{
+        grid-template-columns:1fr;
+    }
+    
 }
