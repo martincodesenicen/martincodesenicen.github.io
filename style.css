@@ -418,6 +418,69 @@ footer{
     border-top:1px solid var(--border);
 }
 
+.slider{
+    position:relative;
+    overflow:hidden;
+    background:#0d1117;
+}
+
+.slides{
+    position:relative;
+}
+
+.slides img{
+    width:100%;
+    height:260px;
+    object-fit:contain;
+
+    display:none;
+
+    background:#0d1117;
+    padding:1rem;
+}
+
+.slides img.active{
+    display:block;
+}
+
+.prev,
+.next{
+
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+
+    width:40px;
+    height:40px;
+
+    border:none;
+    border-radius:50%;
+
+    background:rgba(0,0,0,.55);
+    color:white;
+
+    cursor:pointer;
+
+    z-index:10;
+
+    transition:.25s;
+}
+
+.prev{
+    left:12px;
+}
+
+.next{
+    right:12px;
+}
+
+.prev:hover,
+.next:hover{
+
+    background:var(--accent);
+
+}
+
 @media(max-width:768px){
 
     .hero h1{
