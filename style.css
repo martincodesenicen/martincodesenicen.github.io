@@ -419,9 +419,15 @@ footer{
 }
 
 .slider{
+    height:180px;
     position:relative;
     overflow:hidden;
-    background:#0d1117;
+    background:linear-gradient(
+        180deg,
+        #161b22,
+        #0d1117
+    );
+    padding:1.5rem;
 }
 
 .slides{
