@@ -410,29 +410,34 @@ footer{
 }
 
 .slider{
-    aspect-ratio:16/10;
     position:relative;
+    height:240px;
+    overflow:hidden;
     background:linear-gradient(
         180deg,
         #161b22,
         #0d1117
     );
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
 .slides{
     width:100%;
     height:100%;
+    position:relative;
 }
 
 .slides img{
-
     width:100%;
     height:100%;
-
     object-fit:contain;
 
     display:none;
 
+    padding:1rem;
 }
 
 .slides img.active{
