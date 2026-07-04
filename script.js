@@ -53,3 +53,5 @@ sliders.forEach(slider=>{
     },5000);
 
 });
+
+lucide.createIcons();
