@@ -11,6 +11,20 @@ sliders.forEach(slider=>{
 
     let current = 0;
 
+    let interval = setInterval(nextSlide,5000);
+
+    slider.addEventListener("mouseenter",()=>{
+    
+        clearInterval(interval);
+    
+    });
+    
+    slider.addEventListener("mouseleave",()=>{
+    
+        interval = setInterval(nextSlide,5000);
+    
+    });
+
     function show(index){
 
         images.forEach(img=>img.classList.remove("active"));
