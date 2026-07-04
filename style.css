@@ -123,11 +123,15 @@ nav a.active::after{
     letter-spacing:-2px;
 }
 
+.hero h1 span{
+    color:var(--accent);
+}
+
 .subtitle{
-    max-width:600px;
-    line-height:1.7;
+    max-width:680px;
+    line-height:1.8;
     color:var(--muted);
-    font-size:1.2rem;
+    font-size:1.15rem;
 }
 
 .hero-buttons{
@@ -164,7 +168,7 @@ nav a.active::after{
 }
 
 .section{
-    padding:6rem 0;
+    padding:3.5rem 0;
 }
 
 .section h2{
@@ -334,7 +338,7 @@ nav a.active::after{
     padding:1.5rem;
     display:flex;
     flex-direction:column;
-    flex:1;
+    height:100%;
 }
 
 .project-content p{
@@ -344,8 +348,8 @@ nav a.active::after{
 
 .links{
     display:flex;
-    gap:1rem;
-    margin-top:auto;
+    gap:.8rem;
+    margin-top:1.5rem;
 }
 
 .links a{
@@ -517,6 +521,14 @@ footer{
 
     background:var(--accent);
 
+}
+
+.hero-name{
+    color:var(--muted);
+    font-size:1.1rem;
+    margin-top:-.3rem;
+    margin-bottom:1.4rem;
+    letter-spacing:1px;
 }
 
 @media(max-width:768px){
