@@ -1,70 +1,54 @@
 console.log("Portfolio listo");
+
 const sliders = document.querySelectorAll(".slider");
 
-sliders.forEach(slider=>{
+sliders.forEach(slider => {
 
     const images = slider.querySelectorAll("img");
-
     const next = slider.querySelector(".next");
-
     const prev = slider.querySelector(".prev");
 
     let current = 0;
 
-    let interval = setInterval(nextSlide,5000);
-
-    slider.addEventListener("mouseenter",()=>{
-    
-        clearInterval(interval);
-    
-    });
-    
-    slider.addEventListener("mouseleave",()=>{
-    
-        interval = setInterval(nextSlide,5000);
-    
-    });
-
-    function show(index){
-
-        images.forEach(img=>img.classList.remove("active"));
-
+    function show(index) {
+        images.forEach(img => img.classList.remove("active"));
         images[index].classList.add("active");
-
     }
 
-    next.addEventListener("click",()=>{
-
+    function nextSlide() {
         current++;
 
-        if(current>=images.length)
-            current=0;
+        if (current >= images.length) {
+            current = 0;
+        }
 
         show(current);
+    }
 
-    });
-
-    prev.addEventListener("click",()=>{
-
+    function prevSlide() {
         current--;
 
-        if(current<0)
-            current=images.length-1;
+        if (current < 0) {
+            current = images.length - 1;
+        }
 
         show(current);
+    }
 
+    show(current);
+
+    let interval = setInterval(nextSlide, 5000);
+
+    next.addEventListener("click", nextSlide);
+    prev.addEventListener("click", prevSlide);
+
+    slider.addEventListener("mouseenter", () => {
+        clearInterval(interval);
     });
 
-    setInterval(()=>{
-    
-        current++;
-    
-        if(current>=images.length)
-            current=0;
-    
-        show(current);
-    
-    },5000);
+    slider.addEventListener("mouseleave", () => {
+        interval = setInterval(nextSlide, 5000);
+    });
 
 });
 
