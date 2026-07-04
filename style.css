@@ -354,6 +354,7 @@ nav a:hover {
     overflow: hidden;
     display: grid;
     grid-template-columns: 4.5fr 5.5fr; /* Diseño moderno asimétrico */
+    height: 420px;
 }
 
 .project-content {
@@ -415,6 +416,7 @@ nav a:hover {
     overflow: hidden;
     background: #0b0f17;
     height: 100%;
+    width: 100%;
     min-height: 300px;
 }
 
@@ -427,6 +429,7 @@ nav a:hover {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: top center;
     display: none;
 }
 
@@ -545,9 +548,10 @@ footer {
 @media (max-width: 850px) {
     .project-card {
         grid-template-columns: 1fr;
+        height: auto;
     }
     .slider {
-        height: 240px;
+        height: 220px;
     }
     .about-grid {
         grid-template-columns: 1fr;
