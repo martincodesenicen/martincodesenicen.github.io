@@ -381,10 +381,15 @@ nav a.active::after{
 }
 
 .about-grid{
-    display:grid;
-    grid-template-columns:2fr 1fr;
+    display:flex;
+    flex-direction:column;
     gap:2rem;
-    align-items:start;
+}
+
+.about-info{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:1.5rem;
 }
 
 .about-text{
@@ -403,19 +408,6 @@ nav a.active::after{
 
 .about-text strong{
     color:var(--text);
-}
-
-.about-side{
-    display:flex;
-    flex-direction:column;
-    gap:1.5rem;
-}
-
-.about-box{
-    background:var(--surface);
-    border:1px solid var(--border);
-    border-radius:20px;
-    padding:1.5rem;
 }
 
 .about-box h3{
@@ -572,7 +564,7 @@ footer{
         grid-template-columns:1fr;
     }
 
-    .about-grid{
+    .about-info{
         grid-template-columns:1fr;
     }
     
