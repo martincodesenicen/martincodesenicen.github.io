@@ -3,22 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
     <title>Martín Senicen | Portfolio</title>
-
     <link rel="stylesheet" href="style.css">
-
+    
+    <!-- Google Fonts con más personalidad: Plus Jakarta Sans para títulos y Geist/Inter para texto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <header>
     <div class="container nav">
-        <div class="logo">Martín Senicen</div>
+        <div class="logo">M<span>S</span></div>
 
         <nav>
-            <a href="#head">Inicio</a>
             <a href="#about">Sobre mí</a>
             <a href="#resume">Resumen</a>
             <a href="#projects">Proyectos</a>
@@ -28,126 +29,82 @@
 </header>
 
 <section class="hero container">
+    <div class="avatar-wrapper">
+        <img src="assets/profile.jpg" loading="lazy" alt="Martín Senicen" class="avatar">
+    </div>
 
-    <img src="assets/profile.jpg" loading="lazy" alt="Perfil" class="avatar">
-
-    <h1>
-        Hola, soy Martín Senicen
-    </h1>
+    <h1>Hola, soy <span>Martín Senicen</span></h1>
 
     <p class="subtitle">
-        Desarrollador Full Stack Junior enfocado en .NET y Angular,
-        con interés en el desarrollo backend, APIs REST y
-        aplicaciones web.
+        Estudiante de Ingeniería en Informática y Desarrollador Full Stack Junior. 
+        Especializado en la construcción de APIs REST robustas con .NET y aplicaciones web dinámicas con Angular.
     </p>
 
     <div class="hero-buttons">
-        <a href="#projects" class="btn-primary">
+        <a href="assets/Martin-Senicen-CV.pdf" class="btn-primary" target="_blank" rel="noopener noreferrer">
+            <i data-lucide="file-text"></i> Descargar CV
+        </a>
+        <a href="#projects" class="btn-secondary">
             Ver proyectos
         </a>
-    
-        <a href="assets/Martin-Senicen-CV.pdf"
-           class="btn-secondary"
-           target="_blank">
-            Descargar CV
-        </a>
-    
-        <a href="#contact" class="btn-secondary">
-            Contacto
-        </a>
     </div>
-
 </section>
 
 <section id="about" class="container section">
-
     <h2>Sobre mí</h2>
 
-<div class="about-grid">
+    <div class="about-grid">
+        <div class="about-text">
+            <p>
+                Como estudiante de cuarto año de <strong>Ingeniería en Informática</strong>, combino la base teórica y arquitectónica de la carrera con la práctica constante del desarrollo de software. Mi enfoque principal está en el ecosistema de <strong>.NET (C#)</strong> para el diseño de lógica de negocio escalable y en <strong>Angular</strong> para interfaces eficientes.
+            </p>
+            <p>
+                Me entusiasma involucrarme en el ciclo completo de una aplicación: desde el modelado de bases de datos relacionales hasta el despliegue en contenedores. Busco integrarme a un equipo profesional donde pueda aportar código limpio y seguir adoptando buenas prácticas de arquitectura.
+            </p>
+        </div>
 
-    <div class="about-text">
+        <aside class="about-side">
+            <div class="about-box">
+                <h3><i data-lucide="code-2"></i> Core Stack</h3>
+                <div class="pill-container">
+                    <span>C#</span>
+                    <span>.NET</span>
+                    <span>Angular</span>
+                    <span>PostgreSQL</span>
+                    <span>Docker</span>
+                </div>
+            </div>
 
-        <p>
-            Soy estudiante de cuarto año de Ingeniería en Informática y
-            desarrollador Full Stack Junior con especial interés en el desarrollo
-            backend (ahora utilizando <strong>.NET + C#</strong>) y en la
-            construcción de aplicaciones (actualmente con <strong>Angular</strong>).
-        </p>
-
-        <p>
-            Me gusta participar en todo el proceso de desarrollo, desde el
-            diseño y la base de datos hasta el frontend y el despliegue.
-            Me interesa escribir código limpio, escalable y aplicar buenas
-            prácticas de desarrollo.
-        </p>
-
-        <p>
-            Actualmente continúo fortaleciendo mis conocimientos mediante
-            proyectos personales mientras busco una oportunidad para iniciar
-            mi carrera profesional.
-        </p>
-
+            <div class="about-box">
+                <h3><i data-lucide="compass"></i> Enfoque</h3>
+                <div class="pill-container">
+                    <span>Backend Architectures</span>
+                    <span>APIs REST</span>
+                    <span>Clean Code</span>
+                </div>
+            </div>
+        </aside>
     </div>
-
-    <aside class="about-side">
-
-        <div class="about-box">
-            <h3>
-                <i data-lucide="code-xml"></i>
-                Stack
-            </h3>
-
-            <span>C#</span>
-            <span>.NET</span>
-            <span>Angular</span>
-            <span>PostgreSQL</span>
-            <span>Docker</span>
-        </div>
-
-        <div class="about-box">
-            <h3>
-                <i data-lucide="target"></i>
-                Intereses
-            </h3>
-            
-            <span>Backend</span>
-            <span>APIs REST</span>
-            <span>Cloud</span>
-        </div>
-
-    </aside>
-
-</div>
-
 </section>
 
 <section id="resume" class="container section">
-
     <h2>Resumen</h2>
 
     <div class="resume-grid">
-
         <div class="resume-block">
-            <h3>
-                <i data-lucide="graduation-cap"></i>
-                Educación
-            </h3>
-
-            <p><strong>Ingeniería en Informática</strong></p>
+            <h3><i data-lucide="graduation-cap"></i> Educación</h3>
+            <p class="resume-title">Ingeniería en Informática</p>
             <p>Universidad Gastón Dachary</p>
-            <p>4.º año (en curso)</p>
+            <p class="resume-date">4.º año · En curso</p>
         </div>
 
         <div class="resume-block">
-            <h3>🛠 Tecnologías</h3>
-
+            <h3><i data-lucide="cpu"></i> Tecnologías</h3>
             <div class="tags">
                 <span>C#</span>
                 <span>.NET</span>
                 <span>ASP.NET Core</span>
                 <span>Angular</span>
-                <span>CSS</span>
-                <span>HTML</span>
                 <span>Entity Framework Core</span>
                 <span>PostgreSQL</span>
                 <span>SQL Server</span>
@@ -157,198 +114,137 @@
                 <span>Clean Architecture</span>
             </div>
         </div>
-
-        <div class="resume-block full-width">
-            <h3>🎯 Enfoque</h3>
-
-            <div class="focus-grid">
-                <div>⚙️ Backend</div>
-                <div>🌐 APIs REST</div>
-                <div>💻 Aplicaciones Full Stack</div>
-                <div>☁️ Cloud / Despliegue en la nube</div>
-            </div>
-        </div>
-
     </div>
-
 </section>
 
 <section id="projects" class="container section">
-
-    <h2>Proyectos</h2>
+    <h2>Proyectos destacados</h2>
 
     <div class="projects">
-
         <article class="project-card">
-        
             <div class="slider">
-            
-                <button class="prev">&#10094;</button>
-            
+                <button class="prev" aria-label="Anterior slide">&#10094;</button>
                 <div class="slides">
-            
                     <img src="assets/project2.jpg" loading="lazy" alt="Portada de Doc Converter">
-            
                     <img src="assets/project2-1.jpg" loading="lazy" alt="Captura 1 de la aplicación">
-            
                     <img src="assets/project2-2.jpg" loading="lazy" alt="Captura 2 de la aplicación">
-            
                 </div>
-            
-                <button class="next">&#10095;</button>
-            
+                <button class="next" aria-label="Siguiente slide">&#10095;</button>
             </div>
         
             <div class="project-content">
-        
                 <h3>DocConverter</h3>
-        
                 <p>
-                    Aplicación Full Stack para conversión y
-                    procesamiento de documentos, desarrollada
-                    con ASP.NET Core y Angular.
+                    Aplicación Full Stack para la conversión y procesamiento de documentos. Implementa autenticación JWT y procesamiento asíncrono mediante Background Services nativos para optimizar tiempos de respuesta.
                 </p>
-        
                 <p>
-                    Incluye autenticación JWT, procesamiento
-                    de documentos mediante Background
-                    Services para ejecutar tareas en
-                    segundo plano,despliegue en Render y
-                    Netlify, y PostgreSQL alojado en Neon.
+                    Arquitectura desacoplada con la API desplegada en Render (PostgreSQL en Neon) y el cliente en Netlify.
                 </p>
-        
+                
                 <div class="tags">
                     <span>C#</span>
                     <span>.NET 10</span>
                     <span>Angular 21</span>
                     <span>PostgreSQL</span>
-                    <span>JWT</span>
                     <span>Docker</span>
-                    <span>Render</span>
                 </div>
         
                 <div class="links">
-                    <a class="primary-link" href="https://github.com/martincodesenicen/DocConverter" target="_blank" rel="noopener noreferrer">GitHub</a>
-                    <a href="https://docconverter-mcs.netlify.app/" target="_blank" rel="noopener noreferrer">Demo</a>
-                    <a href="https://docconverter-ke8q.onrender.com/swagger/index.html" target="_blank" rel="noopener noreferrer">API</a>
+                    <a class="project-link github-link" href="https://github.com/martincodesenicen/DocConverter" target="_blank" rel="noopener noreferrer">
+                        <i data-lucide="github"></i> Repository
+                    </a>
+                    <a class="project-link demo-link" href="https://docconverter-mcs.netlify.app/" target="_blank" rel="noopener noreferrer">
+                        <i data-lucide="external-link"></i> Live Demo
+                    </a>
+                    <a class="project-link api-link" href="https://docconverter-ke8q.onrender.com/swagger/index.html" target="_blank" rel="noopener noreferrer">
+                        <i data-lucide="file-code"></i> Swagger API
+                    </a>
                 </div>
-        
             </div>
-        
         </article>
 
         <article class="project-card">
-
             <div class="slider">
-            
-                <button class="prev">&#10094;</button>
-            
+                <button class="prev" aria-label="Anterior slide">&#10094;</button>
                 <div class="slides">
-            
                     <img src="assets/project1.jpg" loading="lazy" alt="Portada de Hotel Reservation API">
-            
                     <img src="assets/project1-1.jpg" loading="lazy" alt="Captura de la API">
-            
                 </div>
-            
-                <button class="next">&#10095;</button>
-            
+                <button class="next" aria-label="Siguiente slide">&#10095;</button>
             </div>
 
             <div class="project-content">
-
                 <h3>Hotel Reservation API</h3>
-
                 <p>
-                    API REST para gestión de hoteles,
-                    habitaciones y reservas.
+                    API REST empresarial diseñada bajo los principios de Clean Architecture para la administración integral de plazas hoteleras, gestión de inventario de habitaciones y flujos de reserva.
                 </p>
                 <p>
-                    Incluye autenticación JWT, control
-                    de acceso por roles, validación de
-                    fechas, entre otras funciones.
+                    Incorpora seguridad basada en roles (RBAC) vía JWT, validación de colisiones de fechas y abstracción de datos con Entity Framework Core.
                 </p>
 
                 <div class="tags">
                     <span>C#</span>
                     <span>.NET 10</span>
-                    <span>JWT</span>
-                    <span>ASP.NET Core</span>
-                    <span>Entity Framework Core</span>
+                    <span>EF Core</span>
                     <span>Clean Architecture</span>
+                    <span>JWT</span>
                 </div>
 
                 <div class="links">
-                    <a href="https://github.com/martincodesenicen/HotelReservation" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a class="project-link github-link" href="https://github.com/martincodesenicen/HotelReservation" target="_blank" rel="noopener noreferrer">
+                        <i data-lucide="github"></i> Repository
+                    </a>
                 </div>
-
             </div>
-
         </article>
-<!-- 
-        <article class="project-card">
-
-            <img src="assets/project3.jpg" alt="Proyecto 3">
-
-            <div class="project-content">
-
-                <h3>Automatización</h3>
-
-                <p>
-                    Automatización de procesos y generación de reportes.
-                </p>
-
-                <div class="tags">
-                    <span>Python</span>
-                    <span>Pandas</span>
-                </div>
-
-                <div class="links">
-                    <a href="#">GitHub</a>
-                </div>
-
-            </div>
-
-        </article>
--->
     </div>
-
 </section>
 
 <section id="contact" class="container section">
+    <h2>Hablemos</h2>
+    <p class="contact-subtitle">Estoy disponible para entrevistas y propuestas técnicas.</p>
 
-    <h2>Contacto</h2>
+    <div class="contact-grid-layout">
+        <a href="mailto:martincodesenicen@gmail.com" class="contact-card">
+            <div class="contact-icon"><i data-lucide="mail"></i></div>
+            <div class="contact-info">
+                <span class="contact-label">Email</span>
+                <span class="contact-value">martincodesenicen@gmail.com</span>
+            </div>
+        </a>
 
-    <div class="contact">
-
-        <a href="mailto:martincodesenicen@gmail.com">📧 martincodesenicen@gmail.com</a>
-
-        <a href="https://github.com/martincodesenicen" target="_blank" rel="noopener noreferrer">
-            💻 GitHub
+        <a href="https://github.com/martincodesenicen" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <div class="contact-icon"><i data-lucide="github"></i></div>
+            <div class="contact-info">
+                <span class="contact-label">GitHub</span>
+                <span class="contact-value">github.com/martincodesenicen</span>
+            </div>
         </a>
         
-        <a href="https://www.linkedin.com/in/martin-senicen" target="_blank" rel="noopener noreferrer">
-            💼 LinkedIn
+        <a href="https://www.linkedin.com/in/martin-senicen" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <div class="contact-icon"><i data-lucide="linkedin"></i></div>
+            <div class="contact-info">
+                <span class="contact-label">LinkedIn</span>
+                <span class="contact-value">linkedin.com/in/martin-senicen</span>
+            </div>
         </a>
 
-        <span>📍 Posadas, Misiones, Argentina</span>
-
+        <div class="contact-card location-card">
+            <div class="contact-icon"><i data-lucide="map-pin"></i></div>
+            <div class="contact-info">
+                <span class="contact-label">Ubicación</span>
+                <span class="contact-value">Posadas, Misiones, Argentina</span>
+            </div>
+        </div>
     </div>
-
 </section>
 
 <footer>
-    © 2026 Martín Senicen
-
-    Desarrollado con HTML, CSS y JavaScript.
-
-    Posadas, Misiones · Argentina
+    <p>© 2026 · Martín Senicen · Desarrollado de forma nativa</p>
+    <p class="footer-sub">Ingeniería en Informática · Posadas, Misiones</p>
 </footer>
 
-<script data-goatcounter="https://martincodesenicen.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
-
+<script data-goatcounter="https://martincodesenicen.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <script src="script.js"></script>
-
 </body>
 </html>
