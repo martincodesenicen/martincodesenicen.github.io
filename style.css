@@ -281,12 +281,14 @@ nav a.active::after{
     display:flex;
     flex-wrap:wrap;
     gap:.5rem;
+    margin-top:1rem;
 }
 
 .tags span{
     padding:.45rem .85rem;
     border-radius:999px;
-    background:rgba(88,166,255,.12);
+    background:transparent;
+    border:1px solid rgba(88,166,255,.25);
     color:#7bc2ff;
     font-size:.85rem;
 }
@@ -295,6 +297,13 @@ nav a.active::after{
     display:grid;
     gap:2rem;
     grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+}
+
+.project-role{
+    color:var(--accent);
+    font-size:.95rem;
+    font-weight:600;
+    margin-top:.35rem;
 }
 
 .project-card{
@@ -335,7 +344,7 @@ nav a.active::after{
 }
 
 .project-content{
-    padding:1.5rem;
+    padding:1.8rem;
     display:flex;
     flex-direction:column;
     height:100%;
@@ -343,7 +352,14 @@ nav a.active::after{
 
 .project-content p{
     color:var(--muted);
-    margin:1rem 0;
+    margin:.8rem 0;
+    line-height:1.7;
+}
+
+.primary-link{
+    background:var(--accent);
+    color:white;
+    border:none;
 }
 
 .links{
