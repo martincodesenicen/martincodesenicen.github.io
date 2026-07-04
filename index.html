@@ -3,12 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Martín Senicen | Portfolio">
-    <meta property="og:description"
-          content="Desarrollador Full Stack Junior especializado en .NET y Angular.">
-    <meta property="og:image"
-      content="assets/preview.png">
-    <script src="https://unpkg.com/lucide@latest"></script>
     <title>Martín Senicen | Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
@@ -24,6 +18,7 @@
 
         <nav>
             <a href="#about">Sobre mí</a>
+            <a href="#resume">Resumen</a>
             <a href="#projects">Proyectos</a>
             <a href="#contact">Contacto</a>
         </nav>
@@ -32,35 +27,27 @@
 
 <section class="hero container">
 
-    <img src="assets/profile.jpg" loading="lazy" alt="Foto de Martin Senicen" class="avatar">
+    <img src="assets/profile.jpg" alt="Perfil" class="avatar">
+
+    <span class="badge">
+        🟢 Disponible para nuevas oportunidades
+    </span>
 
     <h1>
-        Desarrollador Full Stack <span>Junior</span>
+        Hola, soy Martín Senicen
     </h1>
 
-    <p class="hero-name">
-        Martín Senicen
+    <p class="subtitle">
+        Desarrollador Full Stack Junior enfocado en .NET y Angular,
+        con interés en el desarrollo backend, APIs REST y
+        aplicaciones web.
     </p>
 
-    <p class="subtitle">
-        Desarrollador Full Stack Junior con enfoque en <strong>.NET</strong>,
-        <strong>C#</strong> y <strong>Angular</strong>. Me especializo en el
-        desarrollo de APIs REST y aplicaciones web, construyendo soluciones
-        desde el backend hasta el frontend.
-    </p>
-    
     <div class="hero-buttons">
         <a href="#projects" class="btn-primary">
             Ver proyectos
         </a>
-    
-        <a href="assets/Martin-Senicen-CV.pdf"
-           class="btn-secondary"
-           target="_blank"
-           rel="noopener noreferrer">
-            Descargar CV
-        </a>
-    
+
         <a href="#contact" class="btn-secondary">
             Contacto
         </a>
@@ -76,72 +63,100 @@
 
     <div class="about-text">
 
-    <p>
-        Soy estudiante de cuarto año de Ingeniería en Informática y desarrollador
-        Full Stack Junior con enfoque en <strong>.NET</strong>,
-        <strong>C#</strong> y <strong>Angular</strong>. Me interesa especialmente
-        el desarrollo backend, el diseño de APIs REST y la construcción de
-        aplicaciones escalables, participando en todas las etapas del desarrollo,
-        desde el modelado de la base de datos hasta el despliegue. Actualmente
-        continúo ampliando mis conocimientos mediante proyectos personales
-        mientras busco iniciar mi carrera profesional.
-    </p>
+        <p>
+            Soy estudiante de cuarto año de Ingeniería en Informática y
+            desarrollador Full Stack Junior con especial interés en el desarrollo
+            backend (ahora utilizando <strong>.NET + C#</strong>) y en la
+            construcción de aplicaciones (actualmente con <strong>Angular</strong>).
+        </p>
+
+        <p>
+            Me gusta participar en todo el proceso de desarrollo, desde el
+            diseño y la base de datos hasta el frontend y el despliegue.
+            Me interesa escribir código limpio, escalable y aplicar buenas
+            prácticas de desarrollo.
+        </p>
+
+        <p>
+            Actualmente continúo fortaleciendo mis conocimientos mediante
+            proyectos personales mientras busco una oportunidad para iniciar
+            mi carrera profesional.
+        </p>
 
     </div>
 
-    <div class="about-info">
-    
+    <aside class="about-side">
+
         <div class="about-box">
-    
-            <h3>
-                <i data-lucide="code-xml"></i>
-                Tecnologías principales
-            </h3>
-    
-            <div class="tags">
-                <span>.NET</span>
-                <span>C#</span>
-                <span>ASP.NET Core</span>
-                <span>Angular</span>
-                <span>PostgreSQL</span>
-                <span>Docker</span>
-                <span>Git</span>
-            </div>
-    
+            <h3>💻 Stack</h3>
+
+            <span>C#</span>
+            <span>.NET</span>
+            <span>Angular</span>
+            <span>PostgreSQL</span>
+            <span>Docker</span>
         </div>
-    
+
         <div class="about-box">
-    
-            <h3>
-                <i data-lucide="graduation-cap"></i>
-                Educación
-            </h3>
-    
+            <h3>🎯 Intereses</h3>
+            
+            <span>Backend</span>
+            <span>APIs REST</span>
+            <span>Cloud</span>
+        </div>
+
+    </aside>
+
+</div>
+
+</section>
+
+<section id="resume" class="container section">
+
+    <h2>Resumen</h2>
+
+    <div class="resume-grid">
+
+        <div class="resume-block">
+            <h3>🎓 Educación</h3>
+
             <p><strong>Ingeniería en Informática</strong></p>
             <p>Universidad Gastón Dachary</p>
             <p>4.º año (en curso)</p>
-    
         </div>
-    
-        <div class="about-box">
-    
-            <h3>
-                <i data-lucide="target"></i>
-                Especialización
-            </h3>
-    
-            <div class="tags">
-                <span>Backend</span>
-                <span>APIs REST</span>
-                <span>Arquitectura</span>
-                <span>Cloud</span>
-            </div>
-    
-        </div>
-    
-    </div>
 
-</div>
+        <div class="resume-block">
+            <h3>🛠 Tecnologías</h3>
+
+            <div class="tags">
+                <span>C#</span>
+                <span>.NET</span>
+                <span>ASP.NET Core</span>
+                <span>Angular</span>
+                <span>CSS</span>
+                <span>HTML</span>
+                <span>Entity Framework Core</span>
+                <span>PostgreSQL</span>
+                <span>SQL Server</span>
+                <span>Docker</span>
+                <span>JWT</span>
+                <span>Git</span>
+                <span>Clean Architecture</span>
+            </div>
+        </div>
+
+        <div class="resume-block full-width">
+            <h3>🎯 Enfoque</h3>
+
+            <div class="focus-grid">
+                <div>⚙️ Backend</div>
+                <div>🌐 APIs REST</div>
+                <div>💻 Aplicaciones Full Stack</div>
+                <div>☁️ Cloud / Despliegue en la nube</div>
+            </div>
+        </div>
+
+    </div>
 
 </section>
 
@@ -159,11 +174,11 @@
             
                 <div class="slides">
             
-                    <img src="assets/project2.jpg" loading="lazy" alt="Portada de Doc Converter">
+                    <img src="assets/project2.jpg" class="active" alt="Proyecto 2">
             
-                    <img src="assets/project2-1.jpg" loading="lazy" alt="Captura 1 de la web">
+                    <img src="assets/project2-1.jpg" alt="Proyecto 2">
             
-                    <img src="assets/project2-2.jpg" loading="lazy" alt="Captura 2 de la web">
+                    <img src="assets/project2-2.jpg" alt="Proyecto 2">
             
                 </div>
             
@@ -174,18 +189,19 @@
             <div class="project-content">
         
                 <h3>DocConverter</h3>
-
-                <p class="project-role">
-                    Aplicación Full Stack
+        
+                <p>
+                    Aplicación Full Stack para conversión y
+                    procesamiento de documentos, desarrollada
+                    con ASP.NET Core y Angular.
                 </p>
         
                 <p>
-                    Aplicación Full Stack para conversión y procesamiento de
-                    documentos desarrollada con ASP.NET Core y Angular.
-                    Implementé autenticación con JWT, procesamiento asíncrono
-                    mediante Background Services y desplegué el frontend,
-                    backend y la base de datos en servicios independientes
-                    utilizando Netlify, Render y Neon.
+                    Incluye autenticación JWT, procesamiento
+                    de documentos mediante Background
+                    Services para ejecutar tareas en
+                    segundo plano,despliegue en Render y
+                    Netlify, y PostgreSQL alojado en Neon.
                 </p>
         
                 <div class="tags">
@@ -199,9 +215,9 @@
                 </div>
         
                 <div class="links">
-                    <a class="primary-link" href="https://github.com/martincodesenicen/DocConverter" target="_blank" rel="noopener noreferrer">GitHub</a>
-                    <a href="https://docconverter-mcs.netlify.app/" target="_blank" rel="noopener noreferrer">Demo</a>
-                    <a href="https://docconverter-ke8q.onrender.com/swagger/index.html" target="_blank" rel="noopener noreferrer">API</a>
+                    <a href="https://github.com/martincodesenicen/DocConverter">GitHub</a>
+                    <a href="https://docconverter-mcs.netlify.app/">Demo</a>
+                    <a href="https://docconverter-ke8q.onrender.com/swagger/index.html">API</a>
                 </div>
         
             </div>
@@ -216,9 +232,9 @@
             
                 <div class="slides">
             
-                    <img src="assets/project1.jpg" loading="lazy" alt="Portada de Hotel Reservation API">
+                    <img src="assets/project1.jpg" class="active" alt="Proyecto 1">
             
-                    <img src="assets/project1-1.jpg" loading="lazy" alt="Captura de la API">
+                    <img src="assets/project1-1.jpg" alt="Proyecto 1">
             
                 </div>
             
@@ -231,13 +247,13 @@
                 <h3>Hotel Reservation API</h3>
 
                 <p>
-                    API REST para la gestión de hoteles,
-                    habitaciones y reservas. Implementé
-                    autenticación con JWT, autorización
-                    basada en roles y validaciones de
-                    negocio para evitar reservas inválidas
-                    y conflictos de fechas siguiendo una
-                    arquitectura en capas.
+                    API REST para gestión de hoteles,
+                    habitaciones y reservas.
+                </p>
+                <p>
+                    Incluye autenticación JWT, control
+                    de acceso por roles, validación de
+                    fechas, entre otras funciones.
                 </p>
 
                 <div class="tags">
@@ -250,7 +266,7 @@
                 </div>
 
                 <div class="links">
-                    <a href="https://github.com/martincodesenicen/HotelReservation" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://github.com/martincodesenicen/HotelReservation">GitHub</a>
                 </div>
 
             </div>
@@ -292,15 +308,13 @@
 
     <div class="contact">
 
-        <a href="mailto:martincodesenicen@gmail.com">
-            📧 martincodesenicen@gmail.com
-        </a>
+        <a href="mailto:martincodesenicen@gmail.com">📧 martincodesenicen@gmail.com</a>
 
-        <a href="https://github.com/martincodesenicen" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/martincodesenicen">
             💻 GitHub
         </a>
-        
-        <a href="https://www.linkedin.com/in/martin-senicen" target="_blank" rel="noopener noreferrer">
+
+        <a href="https://www.linkedin.com/in/martin-senicen">
             💼 LinkedIn
         </a>
 
@@ -312,10 +326,6 @@
 
 <footer>
     © 2026 Martín Senicen
-
-    Desarrollado con HTML, CSS y JavaScript.
-
-    Posadas, Misiones · Argentina
 </footer>
 
 <script data-goatcounter="https://martincodesenicen.goatcounter.com/count"
