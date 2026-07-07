@@ -113,8 +113,8 @@ nav a:hover {
 @keyframes spin { 100% { transform: rotate(360deg); } }
 
 .avatar {
-    width: 130px;
-    height: 130px;
+    width: 260px;
+    height: 260px;
     border-radius: 50%;
     object-fit: cover;
     border: 4px solid var(--bg);
